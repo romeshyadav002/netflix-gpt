@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
-import Browse from './Browse';
-import Login from './Login';
+import Browse from '../screens/Browse';
+import Login from '../screens/Login';
 import { RouterProvider } from 'react-router-dom';
 
 const Body = () => {

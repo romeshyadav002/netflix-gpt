@@ -4,9 +4,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { LOGO, SUPPORTED_LANGUAGES } from '../utils/constants';
 import { auth } from '../utils/firebase';
-import { addUser, removeUser } from '../utils/userSlice';
-import { toggleGptSearchView } from '../utils/gptSlice';
-import { changeLanguage } from '../utils/configSlice';
+import { addUser, removeUser } from '../utils/store/slices/userSlice';
+import { toggleGptSearchView } from '../utils/store/slices/gptSlice';
+import { changeLanguage } from '../utils/store/slices/configSlice';
 
 const Header = () => {
   const dispatch = useDispatch();
